@@ -1,17 +1,9 @@
-/* ================================================================
-   MAMUT LOGISTICS — interactions
-   ================================================================ */
-
 (function () {
   'use strict';
 
   const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
   const isTouch = window.matchMedia('(hover: none), (pointer: coarse)').matches;
 
-
-  // -----------------------------------------------------------------
-  // 1. LENIS smooth scroll
-  // -----------------------------------------------------------------
   let lenis = null;
 
   if (typeof Lenis !== 'undefined' && !prefersReduced) {
@@ -30,9 +22,6 @@
     requestAnimationFrame(raf);
   }
 
-  // -----------------------------------------------------------------
-  // 2. NAV solid on scroll + scroll progress bar
-  // -----------------------------------------------------------------
   const nav = document.getElementById('nav');
   const progressBar = document.getElementById('progressBar');
 
@@ -50,9 +39,6 @@
   window.addEventListener('scroll', onScroll, { passive: true });
   onScroll();
 
-  // -----------------------------------------------------------------
-  // 3. Mobile menu
-  // -----------------------------------------------------------------
   const navToggle = document.getElementById('navToggle');
   const navMenu = document.getElementById('navMenu');
 
@@ -75,9 +61,6 @@
   });
   navMenu.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
 
-  // -----------------------------------------------------------------
-  // 4. Smooth-scroll anchors
-  // -----------------------------------------------------------------
   document.querySelectorAll('a[href^="#"]').forEach(link => {
     link.addEventListener('click', (e) => {
       const id = link.getAttribute('href');
@@ -94,12 +77,9 @@
     });
   });
 
-  // -----------------------------------------------------------------
-  // 5. Form submit + select label-state
-  // -----------------------------------------------------------------
   const form = document.getElementById('quoteForm');
   if (form) {
-    // Track selects so labels float when a real option is picked
+
     form.querySelectorAll('select').forEach(s => {
       const update = () => s.classList.toggle('has-value', !!s.value);
       s.addEventListener('change', update);
@@ -122,12 +102,8 @@
     });
   }
 
-  // -----------------------------------------------------------------
-  // 6. CURSOR-FOLLOW SPOTLIGHT (desktop only)
-  //    Section-wide glow on dark sections + 3D tilt on service cards
-  // -----------------------------------------------------------------
   if (!isTouch && !prefersReduced) {
-    // Section-wide glow that follows the cursor across each dark section
+
     document.querySelectorAll('.section--dark').forEach(el => {
       el.addEventListener('pointermove', (e) => {
         const rect = el.getBoundingClientRect();
@@ -136,7 +112,6 @@
       });
     });
 
-    // Service cards: spotlight + 3D tilt + lift via GSAP
     if (typeof gsap !== 'undefined') {
       document.querySelectorAll('.card').forEach(el => {
         const tilt = 6;
@@ -167,11 +142,8 @@
     }
   }
 
-  // -----------------------------------------------------------------
-  // 7. GSAP ANIMATIONS
-  // -----------------------------------------------------------------
   if (typeof gsap === 'undefined' || prefersReduced) {
-    // Reveal everything for accessibility / fallback
+
     document.querySelectorAll('.js-fade, .js-card, .js-stat, .js-chip, .js-feature, .js-quote').forEach(el => {
       el.style.opacity = '1';
       el.style.transform = 'none';
@@ -189,12 +161,8 @@
   if (lenis) lenis.on('scroll', ScrollTrigger.update);
   gsap.ticker.lagSmoothing(0);
 
-  // Run hero intro immediately
   runHeroIntro();
 
-  // -----------------------------------------------------------------
-  // Hero intro timeline
-  // -----------------------------------------------------------------
   function runHeroIntro() {
     const tl = gsap.timeline({ defaults: { ease: 'expo.out' } });
     tl.fromTo('.hero__video',
@@ -217,14 +185,12 @@
         { y: 0, opacity: 1, duration: 0.9 }, 0.85);
   }
 
-  // Hero parallax on scroll
   gsap.to('.hero__video', {
     yPercent: 10,
     ease: 'none',
     scrollTrigger: { trigger: '#hero', start: 'top top', end: 'bottom top', scrub: true }
   });
 
-  // Section headlines: line-mask reveal (auto-split on <br>)
   document.querySelectorAll('.js-split-h').forEach(h => {
     const html = h.innerHTML;
     const parts = html.split(/<br\s*\/?>/i);
@@ -242,42 +208,36 @@
     });
   });
 
-  // Generic fade-up
   ScrollTrigger.batch('.js-fade', {
     start: 'top 88%',
     onEnter: (els) => gsap.to(els, { opacity: 1, y: 0, duration: 0.9, stagger: 0.08, ease: 'expo.out', overwrite: 'auto' }),
     once: true,
   });
 
-  // Cards
   ScrollTrigger.batch('.js-card', {
     start: 'top 88%',
     onEnter: (els) => gsap.to(els, { opacity: 1, y: 0, duration: 1, stagger: 0.1, ease: 'expo.out', overwrite: 'auto' }),
     once: true,
   });
 
-  // Chips
   ScrollTrigger.batch('.js-chip', {
     start: 'top 92%',
     onEnter: (els) => gsap.to(els, { opacity: 1, y: 0, duration: 0.65, stagger: 0.04, ease: 'expo.out', overwrite: 'auto' }),
     once: true,
   });
 
-  // Features
   ScrollTrigger.batch('.js-feature', {
     start: 'top 88%',
     onEnter: (els) => gsap.to(els, { opacity: 1, y: 0, duration: 1, stagger: 0.12, ease: 'expo.out', overwrite: 'auto' }),
     once: true,
   });
 
-  // Testimonials
   ScrollTrigger.batch('.js-quote', {
     start: 'top 88%',
     onEnter: (els) => gsap.to(els, { opacity: 1, y: 0, duration: 1, stagger: 0.14, ease: 'expo.out', overwrite: 'auto' }),
     once: true,
   });
 
-  // Stats — fade + count up
   ScrollTrigger.batch('.js-stat', {
     start: 'top 88%',
     onEnter: (stats) => {
@@ -298,7 +258,6 @@
     once: true,
   });
 
-  // Fleet image — clip-path reveal + parallax
   const fleetMedia = document.querySelector('.fleet__media');
   if (fleetMedia) {
     gsap.fromTo(fleetMedia,
@@ -317,7 +276,6 @@
     });
   }
 
-  // Footer giant wordmark
   const bigmark = document.querySelector('.js-bigmark');
   if (bigmark) {
     gsap.to(bigmark, {
@@ -327,7 +285,6 @@
     });
   }
 
-  // Active nav link highlight — mark a nav link active while its section is in view
   const navLinks = document.querySelectorAll('.nav__menu .nav__link');
   navLinks.forEach(link => {
     const id = link.getAttribute('href');
@@ -345,7 +302,6 @@
     navLinks.forEach(l => l.classList.toggle('is-active', l === link));
   }
 
-  // Refresh after fonts/images load
   window.addEventListener('load', () => ScrollTrigger.refresh());
   if (document.fonts && document.fonts.ready) {
     document.fonts.ready.then(() => ScrollTrigger.refresh());

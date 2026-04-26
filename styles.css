@@ -1,7 +1,3 @@
-/* ================================================================
-   MAMUT LOGISTICS — premium styles
-   ================================================================ */
-
 :root {
   --yellow: #F5D230;
   --yellow-soft: #FCE579;
@@ -69,10 +65,6 @@ p { margin: 0; }
 
 ::selection { background: var(--yellow); color: var(--black); }
 
-/* ================================================================
-   Layout helpers
-   ================================================================ */
-
 .container {
   width: 100%;
   max-width: var(--container);
@@ -94,7 +86,6 @@ p { margin: 0; }
 }
 .section--gray { background: var(--gray-50); color: var(--black); }
 
-/* Aurora glow on dark sections — slow, very subtle */
 .section--dark::before {
   content: "";
   position: absolute;
@@ -106,7 +97,7 @@ p { margin: 0; }
   animation: aurora 22s ease-in-out infinite alternate;
   z-index: 0;
 }
-/* Cursor-following glow on dark sections */
+
 .section--dark::after {
   content: "";
   position: absolute;
@@ -196,10 +187,6 @@ p { margin: 0; }
   50% { box-shadow: 0 0 0 8px rgba(245,210,48,0); }
 }
 
-/* ================================================================
-   Scroll progress bar
-   ================================================================ */
-
 .progress {
   position: fixed;
   top: 0; left: 0; right: 0;
@@ -216,10 +203,6 @@ p { margin: 0; }
   transition: width 0.08s linear;
   box-shadow: 0 0 12px rgba(245,210,48,0.4);
 }
-
-/* ================================================================
-   Buttons
-   ================================================================ */
 
 .btn {
   display: inline-flex;
@@ -286,10 +269,6 @@ p { margin: 0; }
   border-color: rgba(255,255,255,0.35);
 }
 
-/* ================================================================
-   Loader
-   ================================================================ */
-
 .loader {
   position: fixed;
   inset: 0;
@@ -343,10 +322,6 @@ p { margin: 0; }
   transition: transform 0.9s var(--ease-in-out);
 }
 
-/* ================================================================
-   Navigation
-   ================================================================ */
-
 .nav {
   position: fixed;
   inset: 0 0 auto 0;
@@ -394,7 +369,6 @@ p { margin: 0; }
   letter-spacing: -0.015em;
 }
 
-/* Brand logo image (replaces SVG mammoth + wordmark) */
 .brand-logo {
   display: block;
   height: 38px;
@@ -516,10 +490,6 @@ p { margin: 0; }
   .nav__inner { grid-template-columns: 1fr auto; }
 }
 
-/* ================================================================
-   Hero
-   ================================================================ */
-
 .hero {
   position: relative;
   min-height: 100vh;
@@ -632,7 +602,6 @@ p { margin: 0; }
 
 .js-fade { opacity: 0; transform: translateY(20px); }
 
-/* Hero marquee at bottom */
 .hero__marquee {
   position: absolute;
   bottom: 0;
@@ -715,10 +684,6 @@ p { margin: 0; }
   .marquee__track { gap: 1.5rem; padding-left: 1.5rem; font-size: 0.72rem; }
   .marquee__track .marquee__dot { font-size: 0.4rem; }
 }
-
-/* ================================================================
-   Services — with cursor-follow spotlight
-   ================================================================ */
 
 .services__grid {
   display: grid;
@@ -826,10 +791,6 @@ p { margin: 0; }
   .card__num { margin-bottom: 1.75rem; }
 }
 
-/* ================================================================
-   Stats / About
-   ================================================================ */
-
 .stats-section { overflow: hidden; }
 .stats-section__head { margin-bottom: clamp(2.5rem, 7vw, 5rem); max-width: 880px; }
 
@@ -895,10 +856,6 @@ p { margin: 0; }
   .stats-section__foot { grid-template-columns: 1fr; gap: 1.5rem; }
   .stats-section__foot p { grid-column: 1; }
 }
-
-/* ================================================================
-   Fleet
-   ================================================================ */
 
 .fleet__grid {
   display: grid;
@@ -982,10 +939,6 @@ p { margin: 0; }
   .fleet__media { aspect-ratio: 4 / 3; }
 }
 
-/* ================================================================
-   Coverage
-   ================================================================ */
-
 .coverage__grid {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -1028,10 +981,6 @@ p { margin: 0; }
 @media (max-width: 640px)  { .coverage__grid { grid-template-columns: repeat(2, 1fr); }
   .chip { padding: 1rem 1.25rem; font-size: 0.9rem; }
 }
-
-/* ================================================================
-   Why choose us — with cursor-follow spotlight
-   ================================================================ */
 
 .features {
   display: grid;
@@ -1104,10 +1053,6 @@ p { margin: 0; }
   .feature__title, .feature__text { margin-left: 1.5rem; margin-right: 1.5rem; }
 }
 
-/* ================================================================
-   Testimonials
-   ================================================================ */
-
 .testimonials {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1170,11 +1115,7 @@ p { margin: 0; }
 
 @media (max-width: 1024px) { .testimonials { grid-template-columns: 1fr; max-width: 600px; margin: 0 auto; } }
 
-/* ================================================================
-   Quote form section
-   ================================================================ */
-
-.quote-section { /* dark background already provided by .section--dark */ }
+.quote-section {  }
 .quote__grid {
   display: grid;
   grid-template-columns: 0.95fr 1fr;
@@ -1324,10 +1265,6 @@ p { margin: 0; }
   .contact li { grid-template-columns: 70px 1fr; gap: 0.75rem; font-size: 0.9rem; }
 }
 
-/* ================================================================
-   Footer
-   ================================================================ */
-
 .footer {
   background: var(--black-deep);
   color: rgba(255,255,255,0.7);
@@ -1414,10 +1351,6 @@ p { margin: 0; }
   .footer__top { grid-template-columns: 1fr; }
   .footer__bottom { justify-content: flex-start; }
 }
-
-/* ================================================================
-   Reduced motion
-   ================================================================ */
 
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
