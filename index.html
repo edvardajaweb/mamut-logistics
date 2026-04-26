@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mamut Logistics — Transporte Internacional y Almacenaje</title>
+  <meta name="description" content="Mamut Logistics — Transporte internacional y almacenaje por toda Europa. Fiable, moderno, puntual. Con sede en Madrid." />
+  <meta name="keywords" content="transporte internacional, almacenaje, logística, despacho aduanero, transporte por carretera, Madrid, España, Europa, última milla" />
+  <meta name="author" content="Mamut Logistics" />
+  <meta name="theme-color" content="#0F0F0F" />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://mamutlogistics.es/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:locale" content="es_ES" />
+  <meta property="og:site_name" content="Mamut Logistics" />
+  <meta property="og:title" content="Mamut Logistics — Transporte Internacional y Almacenaje" />
+  <meta property="og:description" content="Transporte internacional y almacenaje por toda Europa. Fiable, moderno, puntual." />
+  <meta property="og:url" content="https://mamutlogistics.es/" />
+  <meta property="og:image" content="https://mamutlogistics.es/assets/hero.png" />
+  <meta property="og:image:alt" content="Camión de Mamut Logistics en un puerto al atardecer" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mamut Logistics — Transporte Internacional y Almacenaje" />
+  <meta name="twitter:description" content="Transporte internacional y almacenaje por toda Europa. Fiable, moderno, puntual." />
+  <meta name="twitter:image" content="https://mamutlogistics.es/assets/hero.png" />
+
+  <!-- Favicon (inline mammoth SVG) -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 48'%3E%3Crect width='64' height='48' fill='%23F5D230'/%3E%3Cpath d='M8 36c0-10 7-18 17-18 6 0 9 3 11 6 2-3 5-5 9-5 5 0 9 3 9 8 0 3-2 5-4 6v3h-3v-3c-2 0-4-1-5-3-1 2-3 4-6 4v3h-3v-3c-2 0-3-1-4-2-1 5-5 9-11 9-3 0-5-1-7-3v8h-3v-9z M14 38c0 2 2 4 4 4s4-2 4-4-2-4-4-4-4 2-4 4z M40 32c0 2 2 4 4 4s4-2 4-4-2-4-4-4-4 2-4 4z' fill='%230E0E10'/%3E%3C/svg%3E" />
+
+  <!-- JSON-LD Organization schema -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Mamut Logistics",
+    "url": "https://mamutlogistics.es/",
+    "logo": "https://mamutlogistics.es/assets/hero.png",
+    "image": "https://mamutlogistics.es/assets/hero.png",
+    "description": "Transporte internacional y almacenaje por toda Europa. Fiable, moderno, puntual.",
+    "foundingDate": "2010",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Polígono Industrial Sur",
+      "addressLocality": "Madrid",
+      "postalCode": "28021",
+      "addressCountry": "ES"
+    },
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+34-900-123-456",
+      "contactType": "customer service",
+      "email": "hola@mamutlogistics.es",
+      "areaServed": "EU",
+      "availableLanguage": ["Spanish", "English"]
+    },
+    "areaServed": [
+      "España", "Francia", "Alemania", "Italia", "Portugal",
+      "Países Bajos", "Bélgica", "Polonia", "Reino Unido",
+      "Suiza", "Austria", "Chequia"
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- SCROLL PROGRESS -->
+  <div class="progress" aria-hidden="true"><div class="progress__bar" id="progressBar"></div></div>
+
+  <!-- 1. NAVEGACIÓN -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__brand" aria-label="Mamut Logistics — inicio">
+        <img class="brand-logo" src="assets/logo.png" alt="Mamut Logistics" />
+      </a>
+
+      <nav class="nav__menu" id="navMenu" aria-label="Principal">
+        <a href="#services" class="nav__link"><span>Servicios</span></a>
+        <a href="#about" class="nav__link"><span>Nosotros</span></a>
+        <a href="#fleet" class="nav__link"><span>Flota</span></a>
+        <a href="#coverage" class="nav__link"><span>Cobertura</span></a>
+        <a href="#testimonials" class="nav__link"><span>Clientes</span></a>
+      </nav>
+
+      <div class="nav__cta">
+        <a href="#quote" class="btn btn--primary btn--sm btn--magnetic">
+          <span class="btn__label">Presupuesto</span>
+          <span class="btn__icon">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </span>
+        </a>
+      </div>
+
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navMenu">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- 2. HERO -->
+    <section id="hero" class="hero">
+      <video class="hero__video" autoplay muted playsinline preload="auto" poster="assets/hero.png" aria-hidden="true">
+        <source src="assets/hero.mp4" type="video/mp4" />
+      </video>
+      <div class="hero__bg" aria-hidden="true"></div>
+      <div class="hero__grain" aria-hidden="true"></div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+
+      <div class="container hero__inner">
+        <div class="hero__top">
+          <span class="tag"><span class="tag__dot"></span>Europa&nbsp;·&nbsp;Desde 2010</span>
+        </div>
+
+        <h1 class="hero__title js-split">
+          <span class="line"><span class="line__inner">Movemos</span></span>
+          <span class="line"><span class="line__inner">lo que importa.</span></span>
+        </h1>
+
+        <div class="hero__bottom">
+          <p class="hero__sub js-fade">Transporte por carretera, almacenaje y despacho aduanero internacional — diseñado para empresas que no pueden fallar.</p>
+          <div class="hero__actions js-fade">
+            <a href="#quote" class="btn btn--primary btn--magnetic">
+              <span class="btn__label">Solicitar presupuesto</span>
+              <span class="btn__icon">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </span>
+            </a>
+            <a href="#services" class="btn btn--ghost-light">
+              <span class="btn__label">Ver servicios</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__marquee" aria-hidden="true">
+        <div class="marquee">
+          <div class="marquee__track">
+            <span>Entregas a tiempo</span><span class="marquee__dot">●</span>
+            <span>Flota con GPS</span><span class="marquee__dot">●</span>
+            <span>Aduanas gestionadas</span><span class="marquee__dot">●</span>
+            <span>Despacho 24/7</span><span class="marquee__dot">●</span>
+            <span>Iberia → Europa</span><span class="marquee__dot">●</span>
+            <span>Entregas a tiempo</span><span class="marquee__dot">●</span>
+            <span>Flota con GPS</span><span class="marquee__dot">●</span>
+            <span>Aduanas gestionadas</span><span class="marquee__dot">●</span>
+            <span>Despacho 24/7</span><span class="marquee__dot">●</span>
+            <span>Iberia → Europa</span><span class="marquee__dot">●</span>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- 3. SERVICIOS -->
+    <section id="services" class="section section--white">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <div>
+            <span class="eyebrow js-fade">Lo que hacemos</span>
+            <h2 class="section__title js-split-h">De principio<br/><em>a fin.</em></h2>
+          </div>
+          <p class="section__lede js-fade">Cuatro servicios, un equipo responsable. Desde el primer kilómetro hasta el último, tu envío nunca sale de nuestras manos.</p>
+        </div>
+
+        <div class="services__grid">
+          <article class="card js-card">
+            <div class="card__num">01</div>
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7zM6 20a2 2 0 100-4 2 2 0 000 4zM18 20a2 2 0 100-4 2 2 0 000 4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="card__title">Transporte<br/>Internacional</h3>
+            <p class="card__text">Transporte transfronterizo por carretera con precisión y trazabilidad total.</p>
+            <span class="card__cta">Saber más <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          </article>
+
+          <article class="card js-card">
+            <div class="card__num">02</div>
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21V9l9-6 9 6v12M9 21v-7h6v7" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="card__title">Almacenaje</h3>
+            <p class="card__text">Almacenamiento seguro con gestión de inventario inteligente y condiciones flexibles.</p>
+            <span class="card__cta">Saber más <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          </article>
+
+          <article class="card js-card">
+            <div class="card__num">03</div>
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z M14 2v6h6 M9 14l2 2 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="card__title">Despacho<br/>Aduanero</h3>
+            <p class="card__text">Documentación, aranceles y cumplimiento normativo de principio a fin.</p>
+            <span class="card__cta">Saber más <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          </article>
+
+          <article class="card js-card">
+            <div class="card__num">04</div>
+            <div class="card__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 16V8a2 2 0 00-1-1.7l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.7l7 4a2 2 0 002 0l7-4A2 2 0 0021 16zM3.3 7L12 12l8.7-5M12 22V12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="card__title">Última<br/>Milla</h3>
+            <p class="card__text">Distribución final hasta la puerta de tu cliente — rápida, rastreada, firmada.</p>
+            <span class="card__cta">Saber más <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg></span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. NOSOTROS / CIFRAS -->
+    <section id="about" class="section section--dark stats-section">
+      <div class="container">
+        <div class="stats-section__head">
+          <span class="eyebrow js-fade">En cifras</span>
+          <h2 class="section__title section__title--light js-split-h">Un partner logístico<br/><em>en el que puedes confiar.</em></h2>
+        </div>
+
+        <div class="stats">
+          <div class="stat js-stat">
+            <div class="stat__num"><span class="js-count" data-target="15">0</span><span class="stat__plus">+</span></div>
+            <div class="stat__label">Años de experiencia</div>
+          </div>
+          <div class="stat js-stat">
+            <div class="stat__num"><span class="js-count" data-target="10000">0</span><span class="stat__plus">+</span></div>
+            <div class="stat__label">Entregas completadas</div>
+          </div>
+          <div class="stat js-stat">
+            <div class="stat__num"><span class="js-count" data-target="20">0</span><span class="stat__plus">+</span></div>
+            <div class="stat__label">Países cubiertos</div>
+          </div>
+          <div class="stat js-stat">
+            <div class="stat__num"><span class="js-count" data-target="50">0</span><span class="stat__plus">+</span></div>
+            <div class="stat__label">Camiones en flota</div>
+          </div>
+        </div>
+
+        <div class="stats-section__foot">
+          <p class="js-fade">
+            Con sede en Madrid, Mamut Logistics lleva más de una década moviendo mercancías por toda Europa — desde camiones completos hasta entregas delicadas de última milla. Combinamos flota moderna, comunicación transparente y atención obsesiva a los plazos.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. FLOTA -->
+    <section id="fleet" class="section section--white fleet">
+      <div class="container fleet__grid">
+        <div class="fleet__media js-reveal" aria-hidden="true">
+          <div class="fleet__img"></div>
+          <span class="fleet__badge">Mercedes · Euro 6</span>
+        </div>
+        <div class="fleet__text">
+          <span class="eyebrow js-fade">Nuestra flota</span>
+          <h2 class="section__title js-split-h">Moderna.<br/>Silenciosa.<br/><em>Potente.</em></h2>
+          <p class="fleet__copy js-fade">
+            Una flota unificada de tractoras y remolques Mercedes de última generación, con seguimiento por GPS y mantenimiento bajo un calendario estricto. Cada vehículo lleva telemática para que sepas dónde está tu envío en todo momento.
+          </p>
+          <ul class="fleet__list">
+            <li class="js-fade"><span>01</span>GPS y telemática en tiempo real</li>
+            <li class="js-fade"><span>02</span>Remolques estándar y frigoríficos</li>
+            <li class="js-fade"><span>03</span>Formación de conductores, auditada mensualmente</li>
+            <li class="js-fade"><span>04</span>Rutas con conciencia ambiental</li>
+          </ul>
+          <a href="#quote" class="btn btn--ghost btn--magnetic js-fade">
+            <span class="btn__label">Saber más</span>
+            <span class="btn__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. COBERTURA -->
+    <section id="coverage" class="section section--gray coverage">
+      <div class="container">
+        <div class="section__head section__head--row">
+          <div>
+            <span class="eyebrow js-fade">Dónde operamos</span>
+            <h2 class="section__title js-split-h">Por toda Europa<br/><em>y más allá.</em></h2>
+          </div>
+          <p class="section__lede js-fade">Desde nuestros hubs en Madrid operamos rutas semanales a más de 20 países — diariamente a Iberia, Francia, Alemania e Italia.</p>
+        </div>
+
+        <div class="coverage__grid">
+          <div class="chip js-chip"><span class="chip__pin"></span>España</div>
+          <div class="chip js-chip"><span class="chip__pin"></span>Francia</div>
+          <div class="chip js-chip"><span class="chip__pin"></span>Alemania</div>
+          <div class="chip js-chip"><span class="chip__pin"></span>Italia</div>
+          <div class="chip js-chip"><span class="chip__pin"></span>Portugal</div>
+          <div class="chip js-chip"><span class="chip__pin"></span>Países Bajos</div>
+          <div class="chip js-chip"><span class="chip__pin"></span>Bélgica</div>
+          <div class="chip js-chip"><span class="chip__pin"></span>Polonia</div>
+          <div class="chip js-chip"><span class="chip__pin"></span>Reino Unido</div>
+          <div class="chip js-chip"><span class="chip__pin"></span>Suiza</div>
+          <div class="chip js-chip"><span class="chip__pin"></span>Austria</div>
+          <div class="chip js-chip"><span class="chip__pin"></span>Chequia</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. POR QUÉ NOSOTROS -->
+    <section id="why" class="section section--dark why">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow js-fade">Por qué nosotros</span>
+          <h2 class="section__title section__title--light js-split-h">Hecho para empresas<br/><em>que no pueden fallar.</em></h2>
+        </div>
+
+        <div class="features">
+          <div class="feature js-feature">
+            <span class="feature__num">01</span>
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="1.5"/><path d="M12 7v5l3 2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </div>
+            <h3 class="feature__title">Soporte 24/7</h3>
+            <p class="feature__text">Una persona real al teléfono, las 24 horas. Respuesta media en menos de dos minutos.</p>
+          </div>
+          <div class="feature js-feature">
+            <span class="feature__num">02</span>
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-7 7-12a7 7 0 10-14 0c0 5 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="1.5"/><circle cx="12" cy="10" r="2.5" fill="none" stroke="currentColor" stroke-width="1.5"/></svg>
+            </div>
+            <h3 class="feature__title">Seguimiento GPS</h3>
+            <p class="feature__text">Ubicación en vivo, ETA y prueba de entrega — compartida contigo en tiempo real.</p>
+          </div>
+          <div class="feature js-feature">
+            <span class="feature__num">03</span>
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7L9 18l-5-5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="feature__title">Garantía de puntualidad</h3>
+            <p class="feature__text">Ventanas de entrega que respaldamos por escrito. Si fallamos, no pagas.</p>
+          </div>
+          <div class="feature js-feature">
+            <span class="feature__num">04</span>
+            <div class="feature__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h11v10H3zM14 10h4l3 3v4h-7zM6 20a2 2 0 100-4 2 2 0 000 4zM18 20a2 2 0 100-4 2 2 0 000 4z" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg>
+            </div>
+            <h3 class="feature__title">Flota dedicada</h3>
+            <p class="feature__text">Propia, mantenida, identificada — nunca subcontratada a ciegas.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. TESTIMONIOS -->
+    <section id="testimonials" class="section section--white">
+      <div class="container">
+        <div class="section__head">
+          <span class="eyebrow js-fade">Confían en nosotros</span>
+          <h2 class="section__title js-split-h">Lo que dicen<br/><em>nuestros clientes.</em></h2>
+        </div>
+        <div class="testimonials">
+          <figure class="quote js-quote">
+            <svg class="quote__mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M10 8c-3 1.5-5 4-5 8h3c1.7 0 3 1.3 3 3v4c0 1.7-1.3 3-3 3H4c-1.7 0-3-1.3-3-3v-7c0-6 3-10 9-12zM26 8c-3 1.5-5 4-5 8h3c1.7 0 3 1.3 3 3v4c0 1.7-1.3 3-3 3h-4c-1.7 0-3-1.3-3-3v-7c0-6 3-10 9-12z" fill="currentColor"/></svg>
+            <blockquote class="quote__text">Mamut gestiona nuestra ruta semanal Iberia–DACH sin fallos. Su despacho es más afilado que el de cualquiera con quien hayamos trabajado.</blockquote>
+            <figcaption class="quote__cite">
+              <div class="quote__avatar">L</div>
+              <div>
+                <span class="quote__name">Laura Méndez</span>
+                <span class="quote__role">Directora de Operaciones · Olivar Foods</span>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="quote js-quote">
+            <svg class="quote__mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M10 8c-3 1.5-5 4-5 8h3c1.7 0 3 1.3 3 3v4c0 1.7-1.3 3-3 3H4c-1.7 0-3-1.3-3-3v-7c0-6 3-10 9-12zM26 8c-3 1.5-5 4-5 8h3c1.7 0 3 1.3 3 3v4c0 1.7-1.3 3-3 3h-4c-1.7 0-3-1.3-3-3v-7c0-6 3-10 9-12z" fill="currentColor"/></svg>
+            <blockquote class="quote__text">Precios transparentes, ETAs honestos y cero drama. Se han convertido en una extensión de nuestra cadena de suministro.</blockquote>
+            <figcaption class="quote__cite">
+              <div class="quote__avatar">M</div>
+              <div>
+                <span class="quote__name">Marc Dubois</span>
+                <span class="quote__role">Responsable de Logística · Atelier Nord</span>
+              </div>
+            </figcaption>
+          </figure>
+          <figure class="quote js-quote">
+            <svg class="quote__mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M10 8c-3 1.5-5 4-5 8h3c1.7 0 3 1.3 3 3v4c0 1.7-1.3 3-3 3H4c-1.7 0-3-1.3-3-3v-7c0-6 3-10 9-12zM26 8c-3 1.5-5 4-5 8h3c1.7 0 3 1.3 3 3v4c0 1.7-1.3 3-3 3h-4c-1.7 0-3-1.3-3-3v-7c0-6 3-10 9-12z" fill="currentColor"/></svg>
+            <blockquote class="quote__text">Reubicamos una planta entera entre tres países y Mamut no parpadeó. Operadores de primer nivel.</blockquote>
+            <figcaption class="quote__cite">
+              <div class="quote__avatar">S</div>
+              <div>
+                <span class="quote__name">Sofia Rinaldi</span>
+                <span class="quote__role">COO · Velo Industrie</span>
+              </div>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 9. PRESUPUESTO -->
+    <section id="quote" class="section section--dark quote-section">
+      <div class="container quote__grid">
+        <div class="quote__intro">
+          <span class="eyebrow js-fade">Contacto</span>
+          <h2 class="section__title section__title--light js-split-h">Pide tu<br/><em>presupuesto.</em></h2>
+          <p class="quote__sub js-fade">Cuéntanos sobre tu envío y te respondemos en menos de 24 horas — normalmente mucho antes.</p>
+
+          <ul class="contact js-fade">
+            <li>
+              <span class="contact__label">Teléfono</span>
+              <a href="tel:+34900123456">+34 900 123 456</a>
+            </li>
+            <li>
+              <span class="contact__label">Email</span>
+              <a href="mailto:hola@mamutlogistics.es">hola@mamutlogistics.es</a>
+            </li>
+            <li>
+              <span class="contact__label">Oficina</span>
+              <span>Polígono Industrial Sur,<br/>28021 Madrid, España</span>
+            </li>
+          </ul>
+        </div>
+
+        <form class="form js-fade" id="quoteForm" novalidate>
+          <div class="form__row">
+            <label class="field">
+              <input type="text" name="name" required placeholder=" " autocomplete="name" />
+              <span class="field__label">Nombre completo</span>
+              <span class="field__bar"></span>
+            </label>
+          </div>
+          <div class="form__row form__row--two">
+            <label class="field">
+              <input type="email" name="email" required placeholder=" " autocomplete="email" />
+              <span class="field__label">Email</span>
+              <span class="field__bar"></span>
+            </label>
+            <label class="field">
+              <input type="tel" name="phone" placeholder=" " autocomplete="tel" />
+              <span class="field__label">Teléfono</span>
+              <span class="field__bar"></span>
+            </label>
+          </div>
+          <div class="form__row form__row--two">
+            <label class="field">
+              <input type="text" name="origin" placeholder=" " />
+              <span class="field__label">Ciudad de origen</span>
+              <span class="field__bar"></span>
+            </label>
+            <label class="field">
+              <input type="text" name="destination" placeholder=" " />
+              <span class="field__label">Ciudad de destino</span>
+              <span class="field__bar"></span>
+            </label>
+          </div>
+          <div class="form__row">
+            <label class="field field--select">
+              <select name="cargo" required>
+                <option value="" selected disabled hidden></option>
+                <option>Camión completo</option>
+                <option>Carga parcial</option>
+                <option>Almacenaje</option>
+                <option>Otro</option>
+              </select>
+              <span class="field__label">Tipo de carga</span>
+              <span class="field__bar"></span>
+              <svg class="field__caret" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </label>
+          </div>
+          <div class="form__row">
+            <label class="field">
+              <textarea name="message" rows="4" placeholder=" "></textarea>
+              <span class="field__label">Cuéntanos sobre tu envío</span>
+              <span class="field__bar"></span>
+            </label>
+          </div>
+          <button type="submit" class="btn btn--primary btn--magnetic form__submit">
+            <span class="btn__label">Enviar solicitud</span>
+            <span class="btn__icon">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </button>
+          <p class="form__success" id="formSuccess" role="status" aria-live="polite">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 7L9 18l-5-5" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Gracias — te contactaremos en menos de 24 horas.
+          </p>
+        </form>
+      </div>
+    </section>
+
+    <!-- 10. FOOTER -->
+    <footer class="footer">
+      <div class="container footer__top">
+        <div class="footer__brand">
+          <a href="#hero" class="nav__brand" aria-label="Mamut Logistics — inicio">
+            <img class="brand-logo brand-logo--md" src="assets/logo.png" alt="Mamut Logistics" />
+          </a>
+          <p class="footer__tag">Moviendo lo que importa por toda Europa.</p>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Empresa</h4>
+          <a href="#services">Servicios</a>
+          <a href="#about">Nosotros</a>
+          <a href="#fleet">Flota</a>
+          <a href="#coverage">Cobertura</a>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Contacto</h4>
+          <a href="tel:+34900123456">+34 900 123 456</a>
+          <a href="mailto:hola@mamutlogistics.es">hola@mamutlogistics.es</a>
+          <span>Polígono Industrial Sur,<br/>Madrid, España</span>
+        </div>
+
+        <div class="footer__col">
+          <h4 class="footer__heading">Redes</h4>
+          <a href="#">LinkedIn ↗</a>
+          <a href="#">Instagram ↗</a>
+          <a href="#">Facebook ↗</a>
+        </div>
+      </div>
+
+      <div class="footer__wordmark js-bigmark" aria-hidden="true">MAMUT</div>
+
+      <div class="footer__bottom container">
+        <p class="footer__copy">© 2026 Mamut Logistics. Todos los derechos reservados.</p>
+        <p class="footer__meta">Madrid · Hecho con cuidado.</p>
+      </div>
+    </footer>
+
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
